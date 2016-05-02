@@ -1,0 +1,45 @@
+{
+    "name": "ヤフオク！携帯利用制限チェック",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "description": "ヤフオク！の検索結果ページに、利用制限確認ページへのリンクを追加します。",
+    "icons": {
+        "128": "images/extension-icon-128.png"
+    },
+    "author": "ak2ie",
+    "background": {
+        "scripts": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "scripts/chromereload.js",
+            "scripts/background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+    {
+      "matches": [
+        "http://auctions.search.yahoo.co.jp/*",
+        "http://category.auctions.yahoo.co.jp/*",
+        "http://nw-restriction.nttdocomo.co.jp/search.php",
+        "https://au-cs0.kddi.com/FtHome",
+        "https://ct11.my.softbank.jp/WBF/icv",
+        "http://auctions.yahooapis.jp/AuctionWebService/V2/auctionItem"
+      ],
+      "css": [
+        "bower_components/toastr/toastr.min.css",
+        "styles/main.css"
+      ],
+      "js": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/toastr/toastr.min.js",
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "options_page" : "options.html",
+  "permissions": [
+    "tabs"
+  ]
+}

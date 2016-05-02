@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ヤフオク！携帯利用制限チェック オプション</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>ヤフオク！携帯利用制限チェック</h1>
+
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label for="yahooAppID" class="col-lg-4">Yahoo!ディベロッパーネットワーク　アプリケーションID</label>
+                    <div class="col-lg-8 form-inline">
+                        <input id="yahooAppID" type="text" class="form-control" placeholder="アプリケーションID" />
+                        <button class="btn btn-default" id="yahooAppIDCheckBtn">チェック</button>
+                    </div>
+                </div>
+                <div id="yahooAppIDCheckingMsg" class="alert col-lg-offset-4 col-lg-8" role="alert">チェック中...</div>
+
+                <div class="col-lg-offset-4 col-lg-8">
+                    <button class="btn btn-default" id="save">保存</button>
+                </div>
+
+                <p>
+                  アプリケーションIDの取得方法は、<a href="oninstall.html">こちらのページ</a>をご確認ください。
+                </p>
+
+                <!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
+                <a href="http://developer.yahoo.co.jp/about">
+                    <img src="http://i.yimg.jp/images/yjdn/yjdn_attbtn2_88_35.gif" width="88" height="35" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a>
+                <!-- End Yahoo! JAPAN Web Services Attribution Snippet -->
+
+
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="bower_components/jquery/dist/jquery.min.js"></script>
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+                <script src="scripts/options.js"></script>
+            </div>
+        </div>
+</body>
+
+</html>

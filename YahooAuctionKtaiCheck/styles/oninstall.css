@@ -1,0 +1,12 @@
+body {
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.dl-horizontal dt {
+  width: 200px;
+}
+
+.dl-horizontal dd {
+  margin-left: 230px;
+}

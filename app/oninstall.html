@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>はじめに</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/oninstall.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+                <div class="page-header">
+                    <h1>ヤフオク！携帯利用制限チェックをお使いになる前に</h1>
+                </div>
+                <p>
+                    Chrome拡張をインストールしていただきありがとうございます。
+                    <br /> この拡張を使用するためには、
+                    <mark>Yahoo!のアプリケーションID取得</mark>が必要です。下記の手順に沿って設定を行ってください。
+                </p>
+
+                <h2>1. Yahoo! JAPAN IDを取得する</h2>
+                <p>
+                    アプリケーションIDを取得するためには、Yahoo! JAPAN IDが必要です。下記のボタンからIDを取得してください。
+                    <br /> すでに、IDをお持ちの方は再度取得する必要はありません。
+                    <div class="text-center">
+                        <a class="btn btn-default btn-lg" href="https://account.edit.yahoo.co.jp/registration" target="_blank" role="button">Yahoo! JAPAN ID登録</a>
+                    </div>
+                </p>
+
+                <h2>2. アプリケーションIDを取得する</h2>
+                <p>
+                    アプリケーションIDは下記のボタンから取得できます。
+                    <div class="text-center">
+                        <a class="btn btn-default btn-lg" href="https://e.developer.yahoo.co.jp/register" target="_blank" role="button">アプリケーションIDの取得</a>
+                    </div>
+                    <br /> 各項目は下記のとおり入力してください。
+
+                    <div class="col-md-offset-1">
+                    <h4>Web APIを利用する場所</h4>
+                    <dl class="dl-horizontal">
+                        <dt>アプリケーションの種類</dt>
+                        <dd>クライアントサイド</dd>
+                    </dl>
+
+                    <h4>アプリケーションの基本情報</h4>
+                    <dl class="dl-horizontal">
+                        <dt>連絡先メールアドレス</dt>
+                        <dd>任意（当拡張では使用いたしません）</dd>
+                        <dt>アプリケーション名</dt>
+                        <dd>任意（当拡張では使用いたしません）</dd>
+                        <dt>サイトURL</dt>
+                        <dd>任意（当拡張では使用いたしません）</dd>
+                        <dt>アプリケーションの説明</dt>
+                        <dd>任意（当拡張では使用いたしません）</dd>
+                        <dt>利用するスコープ</dt>
+                        <dd>チェック不要です</dd>
+                    </dl>
+
+                    <h4>ガイドラインを確認する</h4>
+                    <dl class="dl-horizontal">
+                        <dt>ガイドラインに同意しますか？</dt>
+                        <dd>「同意する」を選択する</dd>
+                    </dl>
+                  </div>
+                    <br /> 入力が完了したら、「確認」ボタンを押下し「入力内容の確認」ページへ遷移します。
+                    <br /> その後、「登録」ボタンを押下すれば、アプリケーションIDの取得は完了です。
+                </p>
+
+                <h2>3. アプリケーションIDを設定する</h3> 取得したアプリケーションIDを、オプションページから設定してください。</h2>
+                <div class="text-center">
+                    <a class="btn btn-default btn-lg" href="options.html" target="_blank" role="button">オプションページを開く</a>
+                </div>
+                <br />
+
+                <strong>以上で、設定は完了です。</strong>
+
+                <br /> ヤフオク！のページを開き、利用制限チェックのボタンが表示されることを確認してください。
+                <br />
+                <div class="text-center">
+                    <a class="btn btn-default btn-lg" href="http://category.auctions.yahoo.co.jp/list/%E6%90%BA%E5%B8%AF%E9%9B%BB%E8%A9%B1%E6%9C%AC%E4%BD%93-%E6%90%BA%E5%B8%AF%E9%9B%BB%E8%A9%B1-%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3-%E5%AE%B6%E9%9B%BB-AV-%E3%82%AB%E3%83%A1%E3%83%A9/2084005067/?p=%E6%90%BA%E5%B8%AF%E9%9B%BB%E8%A9%B1%E6%9C%AC%E4%BD%93&tab_ex=commerce&slider=0"
+                        target="_blank" role="button">ヤフオク！を開く</a>
+                </div>
+
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body {
+    padding: 20px;
+}
+.yimei-btn {
+  background-color: #f7f6f1;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#yahooAppID {
+  width: 500px;
+}
+
+#yahooAppIDCheckingMsg {
+  display:none;
+}
